@@ -14,6 +14,7 @@ const Blockchain = require("./blockchain")
 const Control = require("./control")
 const Generating = require("./generating")
 const Mining = require("./mining")
+const Transaction = require("./transaction")
 const RawTransactions = require("./raw-transactions")
 const Mnemonic = require("./mnemonic")
 const Address = require("./address")
@@ -54,14 +55,7 @@ class BCHJS {
 
     // console.log(`apiToken: ${this.apiToken}`)
 
-    // Populate Blockbook endpoints.
-    this.Blockbook = new Blockbook(libConfig)
 
-    // Populate OpenBazaar endpoints
-    this.OpenBazaar = new OpenBazaar(libConfig)
-
-    // Bitcoin.com Ninsight indexer
-    this.Ninsight = new Ninsight()
 
     // Populate Full Node
     this.Control = new Control(libConfig)
@@ -80,6 +74,7 @@ class BCHJS {
     this.Mnemonic = new Mnemonic(this.Address)
     this.Price = new Price()
     this.Script = new Script()
+    this.Transaction = new Transaction()
     this.TransactionBuilder = TransactionBuilder
     this.TransactionBuilder.setAddress(this.Address)
     this.Util = new Util(libConfig)

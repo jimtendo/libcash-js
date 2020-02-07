@@ -6,7 +6,7 @@
   "contributors": [
     "Gabriel Cardona <gabriel@bitcoin.com>"
   ],
-  "main": "src/bch-js",
+  "main": "src/",
   "scripts": {
     "test": "nyc mocha --timeout 30000 test/unit",
     "test:integration": "mocha --timeout 30000 test/integration",
@@ -23,6 +23,7 @@
     "url": "git+https://github.com/christroutner/bch-js.git"
   },
   "dependencies": {
+    "@developers.cash/bitcoincash-ops": "^2.0.0",
     "apidoc": "^0.17.7",
     "assert": "^2.0.0",
     "axios": "^0.19.0",
@@ -58,11 +59,13 @@
     "qrcode": "^1.4.1",
     "randombytes": "^2.0.6",
     "repl.history": "^0.1.4",
-    "safe-buffer": "^5.1.2",
+    "safe-buffer": "^5.2.0",
     "satoshi-bitcoin": "^1.0.4",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1",
     "touch": "^3.1.0",
+    "typeforce": "^1.18.0",
+    "varuint-bitcoin": "^1.1.2",
     "wif": "^2.0.6"
   },
   "devDependencies": {

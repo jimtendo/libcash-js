@@ -4,15 +4,6 @@ const cashaddr = require("cashaddrjs")
 const coininfo = require("coininfo")
 
 class Address {
-  constructor(config) {
-    const tmp = {}
-    if (!config || !config.restURL) tmp.restURL = `https://api.bchjs.cash/v3/`
-    else tmp.restURL = config.restURL
-
-    this.restURL = tmp.restURL
-    this.apiToken = tmp.apiToken
-  }
-
   /**
    * @api Address.toLegacyAddress() toLegacyAddress() - Convert to Legacy Address
    * @apiName toLegacyAddress
