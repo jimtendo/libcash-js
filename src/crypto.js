@@ -1,6 +1,9 @@
 const randomBytes = require("randombytes")
 const Bitcoin = require("bitcoincashjs-lib")
 
+/**
+ * Crypto Module
+ */
 class Crypto {
   /**
    * @api Crypto.sha256() sha256() - Utility for creating sha256 hash.

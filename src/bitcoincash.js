@@ -9,6 +9,9 @@ const wif = require("wif")
 
 const Buffer = require("safe-buffer").Buffer
 
+/**
+ * BitcoinCash Module
+ */
 class BitcoinCash {
   constructor(address) {
     this._address = address

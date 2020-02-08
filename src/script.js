@@ -1,6 +1,9 @@
 const Bitcoin = require("bitcoincashjs-lib")
-const opcodes = require("bitcoincash-ops")
+const opcodes = require("@developers.cash/bitcoincash-ops")
 
+/**
+ * Script Module
+ */
 class Script {
   constructor() {
     this.opcodes = opcodes

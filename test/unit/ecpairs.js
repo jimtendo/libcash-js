@@ -1,6 +1,6 @@
 const assert = require("assert")
 
-const BCHJS = require("../../src/bch-js")
+const BCHJS = require("../../src")
 const bchjs = new BCHJS()
 
 const Buffer = require("safe-buffer").Buffer

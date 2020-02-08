@@ -3,6 +3,9 @@ const coininfo = require("coininfo")
 const bip32utils = require("bip32-utils")
 const bchaddrjs = require("bchaddrjs-slp")
 
+/**
+ * HDNode Module
+ */
 class HDNode {
   constructor(address) {
     this._address = address

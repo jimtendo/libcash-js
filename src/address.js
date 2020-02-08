@@ -3,6 +3,9 @@ const Bitcoin = require("bitcoincashjs-lib")
 const cashaddr = require("cashaddrjs")
 const coininfo = require("coininfo")
 
+/**
+ * Address Module
+ */
 class Address {
   /**
    * @api Address.toLegacyAddress() toLegacyAddress() - Convert to Legacy Address

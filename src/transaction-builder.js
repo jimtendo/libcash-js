@@ -3,6 +3,9 @@ const coininfo = require("coininfo")
 const bip66 = require("bip66")
 const bip68 = require("bc-bip68")
 
+/**
+ * Transaction Builder Module
+ */
 class TransactionBuilder {
   static setAddress(address) {
     TransactionBuilder._address = address

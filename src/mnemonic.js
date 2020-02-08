@@ -4,6 +4,9 @@ const Bitcoin = require("bitcoincashjs-lib")
 const Buffer = require("safe-buffer").Buffer
 const wif = require("wif")
 
+/**
+ * Mnemonic Module
+ */
 class Mnemonic {
   constructor(address) {
     this._address = address
@@ -347,6 +350,7 @@ module.exports = Mnemonic
  *
  * The source objects are specified as additional arguments.
  *
+ * @private
  * @param dst Object the object to extend.
  *
  * @return Object the final object.
@@ -363,6 +367,7 @@ const _extend = function(dst) {
 
 /**
  * Defer execution of given function.
+ * @private
  * @param  {Function} func
  */
 const _defer = function(func) {
@@ -373,6 +378,7 @@ const _defer = function(func) {
 
 /**
  * Based on the algorithm at http://en.wikipedia.org/wiki/Levenshtein_distance.
+ * @private
  */
 var Levenshtein = {
   /**

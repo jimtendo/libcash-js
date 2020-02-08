@@ -1,18 +1,9 @@
 const schnorr = require("bip-schnorr")
 
+/**
+ * Schnorr Module
+ */
 class Schnorr {
-  constructor(config) {
-    this.restURL = config.restURL
-    this.apiToken = config.apiToken
-
-    // Add JWT token to the authorization header.
-    this.axiosOptions = {
-      headers: {
-        authorization: `Token ${this.apiToken}`
-      }
-    }
-  }
-
   /**
    * @api Schnorr.sign() sign() - Sign a 32-byte message with the private key, returning a 64-byte signature.
    * @apiName sign

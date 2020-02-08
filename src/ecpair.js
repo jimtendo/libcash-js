@@ -1,6 +1,9 @@
 const Bitcoin = require("bitcoincashjs-lib")
 const coininfo = require("coininfo")
 
+/**
+ * ECPair Module
+ */
 class ECPair {
   static setAddress(address) {
     ECPair._address = address

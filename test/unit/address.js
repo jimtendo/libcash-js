@@ -1,6 +1,6 @@
 const fixtures = require("./fixtures/address.json")
 const assert = require("assert")
-const BCHJS = require("../../src/bch-js")
+const BCHJS = require("../../src")
 const bchjs = new BCHJS()
 const Bitcoin = require("bitcoincashjs-lib")
 
